@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Bangladesh</title>
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/donate-logo.png"
+      type="image/x-icon"
+    />
+    <!-- Font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/cc8d022b28.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- DaisyUI and TailwindCSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Customized TailwindCSS -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              lexend: ["Lexend", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-[lexend]">
+    <header>
+      <!-- nav section -->
+      <section class="bg-[#F9F7F3] py-5 md:py-10">
+        <!-- logo & title for small device-->
+        <div class="md:hidden">
+          <div class="flex justify-center items-center gap-3 mb-5">
+            <img src="./assets/donate-logo.png" alt="" />
+            <h1 class="text-[#111111] text-xl font-semibold">
+              Donate Bangladesh
+            </h1>
+          </div>
+        </div>
+        <!-- navbar -->
+        <div class="container mx-auto flex justify-between items-center px-2">
+          <!-- blog button -->
+          <div>
+            <a href="./index.html">
+              <button
+                class="w-28 h-12 rounded-lg bg-[#B4F461] text-[#111111] text-xl font-semibold"
+              >
+                Home
+              </button>
+            </a>
+          </div>
+          <!-- logo & title -->
+          <div class="hidden md:block">
+            <div class="flex justify-center items-center gap-3">
+              <img src="./assets/donate-logo.png" alt="" />
+              <h1 class="text-[#111111] text-xl font-semibold">
+                Donate Bangladesh
+              </h1>
+            </div>
+          </div>
+          <!-- amount -->
+          <div class="flex justify-center items-center gap-2">
+            <img src="./assets/coin.png" alt="" />
+            <p class="text-[rgba(17,17,17,0.7)] text-xl font-medium">
+              17000 <span>BDT</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main class="container mx-auto px-2">
+      <!-- FAQ section -->
+      <h2 class="font-bold text-3xl my-10">Important FAQ's</h2>
+      <!-- FAQs -->
+      <div class="join join-vertical w-full">
+        <!-- single FAQ 1 -->
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            1. What types of donations can I make to Bangladesh?
+          </div>
+          <div class="collapse-content">
+            <p>
+              You can donate money, clothes, food, educational supplies, and
+              medical supplies. Many organizations also accept volunteer
+              support.
+            </p>
+          </div>
+        </div>
+        <!-- single FAQ 2 -->
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            2. How can I ensure my donation is used effectively?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Research reputable NGOs and charities in Bangladesh. Look for
+              organizations with transparent operations and positive reviews
+              from past donors.
+            </p>
+          </div>
+        </div>
+        <!-- single FAQ 3 -->
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            3. Can my donation help communities affected by climate change?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Yes, donations can fund programs that provide education,
+              resources, and infrastructure improvements to help communities
+              adapt to climate impacts.
+            </p>
+          </div>
+        </div>
+        <!-- single FAQ 4 -->
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">
+            4. How can I donate to support education in Bangladesh?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Many organizations focus on education, such as providing
+              scholarships, school supplies, or building infrastructure.
+              Consider donating directly through established educational
+              charities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-[#F9F7F3] h-24 mt-10"></footer>
+  </body>
+</html>
